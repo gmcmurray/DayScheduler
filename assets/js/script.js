@@ -8,15 +8,17 @@ var clor;
 // Colorcode background colors to show past, present and future
 
 for(var t =9;t<19;t++){
-    if(moment().hour<t){
-        clor= '#d9e9e8';
+    if(moment().hour() < t){
+        console.log(t,moment())
+        clor= '#77dd77';
     }
     else if(moment().hour() > t){
         clor= '#d3d3d3';
     }
-    else{
+    else {
         clor='#ff6961';
     }
+    console.log(moment().hour(),t,moment().hour() === t)
     timeblocks.append(`
     <div class="row" style="margin: 5px">
         <span id="time${t.toString()}" class="col-1 time-block hour" style="border: 1px solid black" >
@@ -29,7 +31,7 @@ for(var t =9;t<19;t++){
     `);
  }
 
-    
+ 
 // Set date with moment formatting
 $("#currentDay").text(now.format("dddd, MMMM D, YYYY"));
 
