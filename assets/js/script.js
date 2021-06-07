@@ -9,20 +9,20 @@ var clor;
 
 for(var t =9;t<19;t++){
     if(moment().hour<t){
-        clor="grey";
+        clor= '#d9e9e8';
     }
     else if(moment().hour() > t){
-        clor="yellow";
+        clor= '#d3d3d3';
     }
     else{
-        clor="green";
+        clor='#ff6961';
     }
     timeblocks.append(`
     <div class="row" style="margin: 5px">
         <span id="time${t.toString()}" class="col-1 time-block hour" style="border: 1px solid black" >
         ${moment(t.toString(),"hh").format("ha")}</span>
         <div  class="input-group mb-3 col-10">
-            <input id="text${t.toString()}" type="text" class="form-control" placeholder="ToDo" aria-label="ToDo" aria-describedby="button-addon2" style = "background-color : ${clor}">
+            <textarea id="text${t.toString()}" style="background-color : ${clor}; color:white" type="text" class="form-control" placeholder="ToDo" aria-label="ToDo" aria-describedby="button-addon2" rows="3"></textarea>
             <button class="saveBtn " type="button" id="button-addon2${t.toString()}">Update</button>
         </div>
     </div>
@@ -34,7 +34,7 @@ for(var t =9;t<19;t++){
 $("#currentDay").text(now.format("dddd, MMMM D, YYYY"));
 
 // Sets alert on all timeblock buttons through class
-var alertButtonEl=$('.btn')
+var alertButtonEl=$('.input-group')
 alertButtonEl.on('click', function () {
     for (let index = 9; index < 19; index++) {
         localStorage.setItem(index.toString(),$(`#text${index.toString()}`).val())

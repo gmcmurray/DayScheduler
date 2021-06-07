@@ -76,3 +76,11 @@ textarea {
   background-color: green !important;
   font-size: 5vw;
 }
+
+@media screen and (max-width:700px) {
+  .col-1.time-block {
+    /* display: inline-block; */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 0 0 0;
+  }}
