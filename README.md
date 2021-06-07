@@ -23,22 +23,6 @@ the lines of code required.  Finally the back tick technique was used, along wit
 ## Screen Shots
 Screen shots with width of 550 pixels below.
 
-![550 pixel width screen shot of Portfolio.](./assests/Images/Code-Quiz-Page1-550px.png)
+![550 pixel width screen shot of Portfolio.](./assets/Images/WorkDayScheduler-550px.png)
 
-Page 1 - Start Page
-
-![550 pixel width screen shot of Portfolio.](./assests/Images/Code-Quiz-Page2-550px.png)
-
-Page 2 - Quiz Page
-
-![550 pixel width screen shot of Portfolio.](./assests/images/Code-Quiz-Page3-550px.png)
-
-Page 3 - End Page
-
-![550 pixel width screen shot of Portfolio.](./assests/images/Code-Quiz-HighScoreRetrieve-550px.png)
-
-High Score Retrieval
-
-
-
-
+Page 1 - Main Page
