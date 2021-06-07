@@ -24,7 +24,7 @@ for(var t =9;t<19;t++){
         <span id="time${t.toString()}" class="col-1 time-block hour" style="border: 1px solid black" >
         ${moment(t.toString(),"hh").format("ha")}</span>
         <div  class="input-group mb-3 col-10">
-            <textarea id="text${t.toString()}" style="background-color : ${clor}; color:white" type="text" class="form-control" placeholder="ToDo" aria-label="ToDo" aria-describedby="button-addon2" rows="3"></textarea>
+            <textarea id="text${t.toString()}" style="background-color : ${clor}; border:1px black" type="text" class="form-control" placeholder="ToDo" aria-label="ToDo" aria-describedby="button-addon2" rows="3"></textarea>
             <button class="saveBtn " type="button" id="button-addon2${t.toString()}">Update</button>
         </div>
     </div>
