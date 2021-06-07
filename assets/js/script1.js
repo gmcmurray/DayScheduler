@@ -20,16 +20,16 @@ for(var t =9;t<19;t++){
     timeblocks.append(`
     <div class="row" style="margin: 5px">
         <span id="time${t.toString()}" class="col-1 time-block hour" style="border: 1px solid black" >
-        ${moment(t.toString(),"hh").format("ha")}</span>
-        <div  class="input-group mb-3 col-10">
-            <input id="text${t.toString()}" type="text" class="form-control" placeholder="ToDo" aria-label="ToDo" aria-describedby="button-addon2" style = "background-color : ${clor}">
+        ${t.toString()}</span>
+        <div class="form-group mb-3 col-10">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="text${t.toString()} rows="3"></textarea>
             <button class="saveBtn " type="button" id="button-addon2${t.toString()}">Update</button>
         </div>
     </div>
     `);
  }
 
-    
 // Set date with moment formatting
 $("#currentDay").text(now.format("dddd, MMMM D, YYYY"));
 
